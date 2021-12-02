@@ -12,6 +12,7 @@ import RequestRxjs from './components/rxjs/requestRxjs';
 import ComRxjs from './components/rxjs/comRxjs';
 import RefsForm from './components/refsForm';
 import StateImprove from './components/state-improve/stateImprove';
+import Axios from './components/ajax/Axios';
 
 export default function App() {
   const list = [{id: 1, name: 'vvvvvv'}, {id: 2, name: 'vvvvvv'}]
@@ -50,6 +51,9 @@ export default function App() {
             <li>
               <Link to="/stateImprove">状态提升</Link>
             </li>
+            <li>
+              <Link to="/axios">Axios</Link>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -63,6 +67,7 @@ export default function App() {
           <Route path="/comRxjs" exact={false} element={<ComRxjs/>} />
           <Route path="/refsForm" exact={false} element={<RefsForm/>} />
           <Route path="/stateImprove" exact={false} element={<StateImprove/>} />
+          <Route path="/axios" exact={false} element={<Axios/>} />
         </Routes>
     </Router>
   );
