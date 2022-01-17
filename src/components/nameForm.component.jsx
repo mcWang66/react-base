@@ -38,6 +38,7 @@ class NameForm extends React.Component {
         </label>
         <input type="file" />
         <input type="submit" value="提交" />
+        
 
       </form>
     );

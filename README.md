@@ -57,9 +57,9 @@ componentDidMount --- 组件已经渲染
 shouldComponentUpdate --- 返回true,false , true 代表允许改变， false 代表不允许改变   ---state props 发生改变
            `state`
            componentWillUpdate -- 数据修改前
-           componentDidUpdate ---数据修改完成
+           `componentDidUpdate` ---数据修改完成
           `props`
-          componentWillReceiveProps --- props 发生改变执行
+          `componentWillReceiveProps` --- props 发生改变执行
 componentWillUnmount -- 卸载
 
 

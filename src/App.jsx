@@ -13,6 +13,7 @@ import ComRxjs from './components/rxjs/comRxjs';
 import RefsForm from './components/refsForm';
 import StateImprove from './components/state-improve/stateImprove';
 import Axios from './components/ajax/Axios';
+import RecordScreen from './components/record-screen/recordScreen';
 
 export default function App() {
   const list = [{id: 1, name: 'vvvvvv'}, {id: 2, name: 'vvvvvv'}]
@@ -54,10 +55,13 @@ export default function App() {
             <li>
               <Link to="/axios">Axios</Link>
             </li>
+            <li>
+              <Link to="/recordScreen">录屏</Link>
+            </li>
           </ul>
         </nav>
         <Routes>
-          <Route path="/" exact element={<Welcome list={list}/>} />
+          {/* <Route path="/" exact element={<Welcome list={list}/>} /> */}
           <Route path="/clock"  exact={false} element={<Clock/>} />
           <Route path="/setStateDemo" exact={false} element={<SetStateDemo/>} />
           <Route path="/ifDemo" exact={false} element={<IfDemo/>} />
@@ -68,6 +72,8 @@ export default function App() {
           <Route path="/refsForm" exact={false} element={<RefsForm/>} />
           <Route path="/stateImprove" exact={false} element={<StateImprove/>} />
           <Route path="/axios" exact={false} element={<Axios/>} />
+          <Route path="/recordScreen" exact={false} element={<RecordScreen/>} />
+          
         </Routes>
     </Router>
   );
